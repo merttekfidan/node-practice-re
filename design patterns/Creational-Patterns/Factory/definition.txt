@@ -1,0 +1,1 @@
+Factory tasarım deseni, benzer özellikleri olan alt sınıflara ortak bir arayüz uygular ve nesne yaratma sorumluluğunu, bu arayüz üzerinden gerçekleştiren bir factory sınıfına verir. Client tarafı alt nesne oluşturmak istediğinde factory sınıfına talepte bulunur ve nesne factory sınıfı tarafından yaratılır.

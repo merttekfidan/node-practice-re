@@ -1,18 +1,7 @@
-var Shopper = require('./Shopper');
+var userFactory = require("./userFactory");
 
-var alex = new Shopper('Alex Banks');
-alex.addItemToList('camping knife');
-alex.addItemToList('tent');
-alex.addItemToList('backpack');
-alex.addItemToList('map');
-alex.addItemToList('slingshot');
+var alex = userFactory("Alex Banks", 100);
+var eve = userFactory("Eve Porcello", 100, "employee", "This and That");
 
-var eve = new Shopper('Eve Porcello');
-eve.addItemToList('camping knife');
-eve.addItemToList('tent');
-eve.addItemToList('backpack');
-eve.addItemToList('map');
-eve.addItemToList('reading light');
-
-console.log( `${alex.name}: ${alex.shoppingList}` );
-console.log( `${eve.name}: ${eve.shoppingList}` );
+console.log(alex.toString());
+console.log(eve.toString());

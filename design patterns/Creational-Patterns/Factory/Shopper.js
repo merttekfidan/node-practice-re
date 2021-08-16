@@ -1,24 +1,11 @@
-class Shopper {
+var Person = require('./Person')
 
-    constructor(name='unnamed person') {
-        this._name = name;
-        this._shoppingList = [];
-    }
+class Shopper extends Person {
 
-    set name(value) {
-        this._name = value;
-    }
-
-    get name() {
-        return this._name;
-    }
-
-    get shoppingList() {
-        return this._shoppingList.join(', ');
-    }
-
-    addItemToList(item) {
-        this._shoppingList.push(item);
+    constructor(name, money=0) {
+        super(name);
+        this.money = money;
+        this.employed = false;
     }
 
 }
