@@ -1,0 +1,2 @@
+Bir class'ı birden fazla yerde kullanıp, sadece ve sadece tek bir object oluşturmasını garanti eden patterndir.
+Yani oluşturulan object kaç kere oluşturulursa oluştursun tek bir instance döndürür.
