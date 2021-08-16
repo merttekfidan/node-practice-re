@@ -1,11 +1,11 @@
 const { createServer } = require("http");
 const { stat, createReadStream } = require("fs");
 const { promisify } = require("util");
-const file = "./install-node.mp4";
+const fileName = "./install-node.mp4";
 const fileInfo = promisify(stat);
 
 createServer(async (req, res) => {
-  const { size } = await fileInfo(file);
+  const { size } = await fileInfo(fileName);
   console.log("asd");
   res.writeHead(200, {
     "Content-Length": size,
