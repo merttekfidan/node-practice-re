@@ -1,0 +1,2 @@
+Var olan bir nesneyi clonelayarak aynı nesneleri defalarca oluşturmamıza gerek kalmıyor.
+Bu klonlama(kopyalama) işleminde, deep-copy yöntemi kullanılıyor. Yani bir nesne, birebir kopyalanarak yeni bir referans değişkene atılıyor.
