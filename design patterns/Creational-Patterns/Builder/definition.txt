@@ -1,0 +1,1 @@
+Eğer oluşturulan instance'ın parametresi oldukça fazla ve karışıksa, onu bir builder classında fonksiyonlarla oluşturup build() fonksiyonunda build edilen classı objesiyle birlikte gödneriyoruz.
